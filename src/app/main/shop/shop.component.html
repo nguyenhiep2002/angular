@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Prime</th>
+            <th>Ảnh</th>
+            <th>Chi tiết</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pro of product">
+            <td scope="row">{{pro.id}}</td>
+            <td>{{pro.name}}</td>
+            <td>{{pro.price}}</td>
+            <td><img class="card-img-top" src="{{pro.anh}}" alt="{{pro.anh}}"></td>
+            <td>
+                <a href="" class="btn btn-success" routerLink="/detail/{{pro.id}}">XEM</a>
+            </td>
+            
+        </tr>  
+    </tbody>
+</table>
